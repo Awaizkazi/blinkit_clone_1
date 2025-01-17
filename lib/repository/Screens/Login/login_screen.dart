@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:blinkit_clone_1/repository/Screens/BottomNavBar/bottom_nav_screen.dart';
 import 'package:blinkit_clone_1/repository/widgets/uihelper.dart';
 import 'package:flutter/material.dart';
 
@@ -55,7 +56,14 @@ class LoginScreen extends StatelessWidget {
                     height: 40,
                     width: 295,
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => BottomNavScreen(),
+                          ),
+                        );
+                      },
                       style: ElevatedButton.styleFrom(
                           backgroundColor: const Color(0xFFE23744),
                           shape: RoundedRectangleBorder(
