@@ -45,6 +45,7 @@ class UiHelper {
           ),
           suffixIcon: Icon(
             Icons.mic,
+            color: Colors.black,
           ),
         ),
       ),
