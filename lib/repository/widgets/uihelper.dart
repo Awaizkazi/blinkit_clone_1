@@ -33,7 +33,7 @@ class UiHelper {
         borderRadius: BorderRadius.circular(10),
         color: Colors.white,
         border: Border.all(
-          color: Color(0xffC5C5C5),
+          color: const Color(0xffC5C5C5),
         ),
       ),
       child: TextField(
@@ -47,6 +47,25 @@ class UiHelper {
             Icons.mic,
           ),
         ),
+      ),
+    );
+  }
+
+  static customButton(VoidCallback voidCallback) {
+    return Container(
+      height: 18,
+      width: 30,
+      decoration: BoxDecoration(
+        color: Colors.white,
+        border: Border.all(
+          color: const Color(0xff27af34),
+        ),
+        borderRadius: BorderRadius.circular(4),
+      ),
+      child: const Text(
+        textAlign: TextAlign.center,
+        "ADD",
+        style: TextStyle(color: Color(0xff27af34), fontSize: 9),
       ),
     );
   }

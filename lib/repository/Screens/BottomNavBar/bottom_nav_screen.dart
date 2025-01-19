@@ -1,6 +1,7 @@
 import 'package:blinkit_clone_1/repository/Screens/BottomNavBar/cart/cart_screen.dart';
 import 'package:blinkit_clone_1/repository/Screens/BottomNavBar/print/print_screen.dart';
 import 'package:blinkit_clone_1/repository/widgets/uihelper.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 import 'categorys/category_screen.dart';
@@ -17,7 +18,7 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
   int currentIndex = 0;
   List<Widget> pages = [
     HomeScreen(),
-    CategoryScreen(),
+    CartScreen(),
     CategoryScreen(),
     PrintScreen(),
   ];
